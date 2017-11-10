@@ -20,7 +20,7 @@ i.icon{
 }
 
 .container.main{
-    margin-top: 3em;
+    margin-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -78,9 +78,18 @@ i.icon{
     padding-top: 5px;
 }
 
-.lgProfileImg{
-    margin-left: 10%;
+.image-cropper {
+    width: 15vw;
+    height: 15vw;
+    position: relative;
+    overflow: hidden;
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    margin-left: 15%;
+}
+
+#pImage {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
 }
