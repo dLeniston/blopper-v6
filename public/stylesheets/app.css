@@ -80,4 +80,7 @@ i.icon{
 
 .lgProfileImg{
     margin-left: 10%;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
 }
