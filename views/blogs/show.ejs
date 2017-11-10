@@ -1,0 +1,26 @@
+<% include ../partials/header %>
+
+<div class="content">
+<div class="ui main text container segment">
+    <div class="ui huge header"><i class="file text outline icon"></i><%= blog.title %></div>
+    <div class="ui top attached">
+        <div class="item">
+            <img class="ui centred rounded image" src="<%= blog.image %>">
+            <div class="content">
+                <span><i class="calendar icon"></i><strong><%= blog.created.toDateString() %></strong></span>
+                <span id="user"><em>Written By</em> <strong><a href="/user/<%= user._id %>"><%=blog.author.username %></a></strong><img class="ui avatar image" id="profileImg" src="<%= profile.image %>"></span>
+            </div>
+            <div class="description">
+                <p><%- blog.body %></p>
+            </div>
+            <% if(currentUser && blog.author.id.equals(currentUser._id)){ %>
+            <a class="ui basic orange button" href="/blogs/<%= blog._id %>/edit">Edit</a>
+                <form id="delete" action="/blogs/<%= blog._id %>?_method=DELETE" method="POST">
+                    <button class="ui basic red button">Delete</button>
+                </form>
+            <% } %>
+        </div>
+    </div>
+</div>
+</div>
+<% include ../partials/footer %>

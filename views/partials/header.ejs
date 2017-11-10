@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Blopper V6</title>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    </head>
+    <body>
+        <div class="ui fixed inverted menu">
+            <div class="ui container">
+                <div class="header item"><i class="talk outline icon"></i></i>Blopper</div>
+                <a href="/" class="item">Home</a>
+            <% if(currentUser){ %>
+                <a href="/blogs/new" class="item">New Post</a>
+                <a href="/logout" class="item">Logout</a>
+                <span class="item" id="username"> Signed In As <a href="/user/<%= currentUser._id %>">&nbsp<%= currentUser.username %></a></span></span>
+            <% }else{ %>
+                    <a href="/login" class="item">Login</a>
+                    <a href="/register" class="item">Sign Up</a>
+            <% } %>
+            </div>
+        </div>
+        <div class="ui container" id="flash">
+        <% if(error && error.length > 0){ %>
+            <div class="ui negative message">
+                <div class="header">
+                    <%= error %>
+                </div>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="ui success message">
+                <div class="header">
+                    <%= success %>
+                </div>
+            </div>
+        <% } %>
+    </div>
+        
+        

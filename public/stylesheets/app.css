@@ -1,0 +1,83 @@
+.html{
+    height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+background: #f85032;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #e73827, #f85032);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #e73827, #f85032); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+i.icon{
+    font-size: 2em;
+}
+
+.container.main{
+    margin-top: 3em;
+    padding-bottom: 50px;
+}
+
+.description{
+    padding-top: 10px;
+}
+
+.custom{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    display: block;
+    margin:  auto;
+    border-radius: 20px;
+}
+
+#delete{
+    display: inline;
+}
+
+#flash{
+    margin-top: 5em;
+    padding-bottom: 20px;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+#footer{
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0;
+}
+
+#user{
+    padding-top: 15px;
+    margin-left: 50%;
+}
+
+#username{
+    margin-left: auto;
+}
+
+#profileImg{
+    margin-left: 5px;
+}
+
+#profileIcon{
+    padding-top: 5px;
+}
+
+.lgProfileImg{
+    margin-left: 10%;
+}
