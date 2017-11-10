@@ -1,5 +1,5 @@
 <% include ../partials/header %>
-
+<div class="container">
 <div class="content">
     <div class="ui segment">
         <div class="ui grid">
@@ -21,7 +21,7 @@
     </div>
 </div>
 
-<div class="content">
+<div class="content" id="profileContent">
 <div class="ui main text container">
     <div class="ui top attached huge header"><i class="write icon"></i><%=profile.owner.username %>'s Blogs</div>
     <div class="ui attached segment">
@@ -50,6 +50,7 @@
             <% }) %>
         </div>
     </div>
+</div>
 </div>
 </div>
 
