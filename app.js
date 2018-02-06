@@ -13,8 +13,8 @@ passportLocalMongoose = require("passport-local-mongoose");
 
 var app = express();
 
-mongoose.connect("mongodb://darren:cSas831SdcAa@ds157185.mlab.com:57185/blopper_v6");
-//mongoose.connect("mongodb://localhost/project_blog_app_V4");
+mongoose.connect("DATABASE HERE");
+
 
 
 app.use(require("express-session")({
